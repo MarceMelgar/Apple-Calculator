@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #FFF;
+    display: grid;
+    place-items: center;
+}
+
+.calculadora {
+    background-color: #313637;
+    color: white;
+    width: 300px;
+    max-width: 100%;
+    border-radius: .5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .1rem;
+}
+
+.display {
+    grid-column: 1 / -1;
+    background-color: #313637;
+    padding: 1rem;
+    font-size: 3rem;
+    text-align: right;
+    font-family: monospace;
+}
+
+.up {
+    background-color: #46484c;
+    color: white;
+    border: 0;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.up:hover {
+    background-color: #66686c;
+}
+
+.btn {
+    color: #FFF;
+    border: 0;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.num {
+    background-color: #66686c;
+}
+
+.num:hover {
+    background-color: #a4a5a5;
+}
+
+.bs {
+    background-color: #fd9e2b;
+}
+
+.bs:hover {
+    background-color: #c97d20;
+}
+
+#cero {
+    grid-column: span 2;
+}
