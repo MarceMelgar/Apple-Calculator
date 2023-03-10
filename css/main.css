@@ -10,16 +10,17 @@
 
 body {
     min-height: 100vh;
-    background-color: #FFF;
+    background-color: #252524;
     display: grid;
     place-items: center;
 }
 
 .calculadora {
     background-color: #313637;
-    color: white;
     width: 300px;
     max-width: 100%;
+    padding: .05rem;
+    border: solid .05px #000;
     border-radius: .5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -29,7 +30,10 @@ body {
 .display {
     grid-column: 1 / -1;
     background-color: #313637;
+    color: white;
     padding: 1rem;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
     font-size: 3rem;
     text-align: right;
     font-family: monospace;
@@ -55,6 +59,8 @@ body {
     border: 0;
     padding: 1.5rem .5rem;
     display: flex;
+    font-size: 1rem;
+    font-weight: lighter;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -78,4 +84,12 @@ body {
 
 #cero {
     grid-column: span 2;
+}
+
+.bbl {
+    border-bottom-left-radius: .5rem;
+}
+
+.bbd {
+    border-bottom-right-radius: .5rem;
 }
